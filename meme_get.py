@@ -8,7 +8,7 @@ app=Flask(__name__)
 def get_meme():
 	#Uncomment these two lines and comment out the other url line if yo
 	#sr = "/wholesomememes"
-	# url = "https://meme-api.herokuapp.com/gimme" + sr
+	# url = "https://meme-api.com/gimme" + sr
 	url = "https://meme-api.com/gimme"
 	response = json.loads(requests.request("GET", url).text)
 	meme_large = response["preview"] [-2]
